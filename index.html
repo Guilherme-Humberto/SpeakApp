@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>SpeakApp</title>
+</head>
+<body>
+    <header>
+        <h1>SpeakApp</h1>
+        <h3>
+            A interface SpeechSynthesis da Web Speech API é a interface controladora do serviço de fala; 
+            isso pode ser usado para recuperar informações sobre as vozes de síntese disponíveis no dispositivo, 
+            iniciar e pausar a fala e outros comandos
+        </h3>
+        <select name="" id="languages">
+            <option disabled selected >Escolha uma língua</option>
+            <option value="fr">Francês</option>
+            <option value="en">Inglês</option>
+            <option value="pt">Português</option>
+            <option value="es">Espanhol</option>
+            <option value="zh">Chinês</option>
+            <option value="it">Italiano</option>
+        </select>
+    </header>
+
+    <main>
+        <textarea autocomplete="work" lang="en" placeholder="Digite o texto" id="text-area"></textarea>
+        <div>
+            <button onclick="startSpeak()">Falar</button>
+            <button onclick="stopSpeak()">Parar</button>
+            <button onclick="clearText()">Limpar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
